@@ -1,0 +1,108 @@
+[
+  {
+    "test": "Health Check",
+    "success": true,
+    "details": "API is healthy",
+    "timestamp": "2026-04-14T05:49:47.586311",
+    "response_data": {
+      "status": "healthy",
+      "service": "Medicare AI Backend"
+    }
+  },
+  {
+    "test": "AI Chatbot - Simple",
+    "success": true,
+    "details": "AI responded correctly. Severity: low",
+    "timestamp": "2026-04-14T05:49:49.292706",
+    "response_data": {
+      "conversation_id": "conv_88c3208a4b89",
+      "severity": "low"
+    }
+  },
+  {
+    "test": "AI Chatbot - Critical",
+    "success": true,
+    "details": "Emergency alert correctly triggered for critical symptoms",
+    "timestamp": "2026-04-14T05:49:50.833060",
+    "response_data": {
+      "emergency_alert": true,
+      "severity": "critical"
+    }
+  },
+  {
+    "test": "Conversation Reuse",
+    "success": true,
+    "details": "Successfully continued existing conversation",
+    "timestamp": "2026-04-14T05:49:52.811935",
+    "response_data": null
+  },
+  {
+    "test": "Doctors List",
+    "success": true,
+    "details": "Retrieved 4 doctors with correct structure",
+    "timestamp": "2026-04-14T05:49:52.935095",
+    "response_data": {
+      "count": 4,
+      "specializations": [
+        "General Medicine",
+        "Cardiology",
+        "Pediatrics",
+        "Dermatology"
+      ]
+    }
+  },
+  {
+    "test": "Doctors Filter",
+    "success": true,
+    "details": "Filter returned 1 cardiologist(s)",
+    "timestamp": "2026-04-14T05:49:53.081330",
+    "response_data": {
+      "cardiologists": [
+        "Dr. Michael Chen"
+      ]
+    }
+  },
+  {
+    "test": "Emergency Alert - Manual",
+    "success": true,
+    "details": "Manual emergency alert created: alert_af10fa64667a",
+    "timestamp": "2026-04-14T05:49:53.175069",
+    "response_data": {
+      "alert_id": "alert_af10fa64667a",
+      "symptoms": [
+        "chest pain",
+        "shortness of breath"
+      ]
+    }
+  },
+  {
+    "test": "Emergency Active Alerts",
+    "success": true,
+    "details": "Retrieved 3 active alert(s)",
+    "timestamp": "2026-04-14T05:49:53.281010",
+    "response_data": {
+      "count": 3
+    }
+  },
+  {
+    "test": "Appointment Creation",
+    "success": true,
+    "details": "Video appointment created with channel: consult_583a7b247d",
+    "timestamp": "2026-04-14T05:49:53.477222",
+    "response_data": {
+      "appointment_id": "apt_test_1776145793",
+      "channel_name": "consult_583a7b247d"
+    }
+  },
+  {
+    "test": "Health Report Generation",
+    "success": true,
+    "details": "Health report generated: report_a8b0301bd597",
+    "timestamp": "2026-04-14T05:49:56.010988",
+    "response_data": {
+      "report_id": "report_a8b0301bd597",
+      "symptoms_count": 5,
+      "severity": "medium"
+    }
+  }
+]
